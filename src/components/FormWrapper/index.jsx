@@ -1,6 +1,10 @@
-const FormWrapper = ({children, ...props }) => {
+import Form from "../Form"
+
+const FormWrapper = ({ ...props }) => {
 	return (
-		<div{...props}>{ children }</div>
+		<div{...props}>
+		<Form/>
+		</div>
 	)
 }
 

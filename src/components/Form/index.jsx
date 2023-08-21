@@ -1,6 +1,19 @@
-const Form = ({ children, ...props }) => {
+import LabelInputWrapper from "../common/LabelInputWrapper"
+
+const Form = ({ ...props }) => {
 	return (
-		<form {...props}>{children}</form>
+		<form {...props}>
+			<div>
+				<LabelInputWrapper/>
+				<LabelInputWrapper/>
+				<LabelInputWrapper/>
+				<LabelInputWrapper/>
+				<LabelInputWrapper/>
+				<LabelInputWrapper/>
+				<LabelInputWrapper />
+				<LabelInputWrapper />
+			</div>
+		</form>
 	)
 }
 
