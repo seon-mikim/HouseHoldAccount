@@ -1,9 +1,9 @@
-import React from 'react'
+import './style.css'
 
-const index = () => {
+const Layout = () => {
 	return (
-		<div>index</div>
+		<div className="layout"></div>
 	)
 }
 
-export default index
+export default Layout
