@@ -1,9 +1,7 @@
 import React from 'react'
 
-const index = () => {
-	return (
-		<div>index</div>
-	)
+const Input = ({...props }) => {
+	return <input {...props} />
 }
 
-export default index
+export default Input
