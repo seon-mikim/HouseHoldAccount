@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Label = ({ title, ...props }) => {
-	return (
-		<label{...props}>{title}</label>
-	)
-}
+const Label = ({ children, ...props }) => {
+  return <label {...props}>{children}</label>;
+};
 
-export default Label
+export default Label;
