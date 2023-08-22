@@ -1,7 +1,8 @@
-import Layout from "./components/Layout";
+import HouseHoldPage from "./pages/HouseHoldPage";
+
 
 function App() {
-  return <Layout/>
+  return <HouseHoldPage/>
 }
 
 export default App;
