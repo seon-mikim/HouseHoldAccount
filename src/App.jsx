@@ -1,5 +1,7 @@
+import Layout from "./components/Layout";
+
 function App() {
-  return <>초기 세팅</>
+  return <Layout/>
 }
 
 export default App;

@@ -1,9 +1,12 @@
-import React from 'react'
+import './style.css'
+import FormWrapper from '../FormWrapper'
 
-const index = () => {
+const Layout = () => {
 	return (
-		<div>index</div>
+		<div className="layout">
+			<FormWrapper/>
+		</div>
 	)
 }
 
-export default index
+export default Layout

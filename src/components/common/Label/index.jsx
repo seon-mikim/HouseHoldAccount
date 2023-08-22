@@ -1,9 +1,9 @@
 import React from 'react'
 
-const index = () => {
+const Label = ({ title, ...props }) => {
 	return (
-		<div>index</div>
+		<label{...props}>{title}</label>
 	)
 }
 
-export default index
+export default Label
