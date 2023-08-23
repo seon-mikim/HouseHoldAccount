@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Item from './Item';
 
-const index = () => {
-	return (
-		<div>index</div>
-	)
-}
+const List = ({ listItem }) => {
+  return (
+    <div>
+      <Item item={listItem} />
+    </div>
+  );
+};
 
-export default index
+export default List;
