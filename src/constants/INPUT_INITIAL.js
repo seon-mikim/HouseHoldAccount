@@ -1,5 +1,7 @@
+
+
 const INITIAL = {
-  id: new Date().getTime(),
+  id: '',
   productName: '',
   price: '',
   productType: '',
@@ -9,3 +11,4 @@ const INITIAL = {
 };
 
 export default INITIAL;
+

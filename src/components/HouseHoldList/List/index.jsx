@@ -1,10 +1,10 @@
 import React from 'react';
-import Item from './Item';
+import Card from '../../ui/Card';
 
-const List = ({ listItem }) => {
+const List = ({ listItem, onClick }) => {
   return (
     <div>
-      <Item item={listItem} />
+      <Card item={listItem} onClick={ onClick} />
     </div>
   );
 };
