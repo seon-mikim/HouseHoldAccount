@@ -1,0 +1,9 @@
+.label-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.memo-input {
+	background-color: #edf0f4;
+	border: 1px solid transparent;
+}

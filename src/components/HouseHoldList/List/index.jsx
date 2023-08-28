@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Card from '../../ui/Card';
 
-const index = () => {
-	return (
-		<div>index</div>
-	)
-}
+const List = ({ listItem, onClick }) => {
+  return (
+    <div>
+      <Card item={listItem} onClick={ onClick} />
+    </div>
+  );
+};
 
-export default index
+export default List;
