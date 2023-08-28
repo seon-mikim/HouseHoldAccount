@@ -1,20 +1,18 @@
 import Input from '../../Input';
 import Label from '../../Label';
 import LabelInner from '../LabelInner';
-
-const LabelCheckboxInput = ({ title, name, type, checkBoxCheck, value }) => {
+import './style.css'
+const LabelCheckboxInput = ({ title, name, type, checkBoxCheck, value, ...props }) => {
 
 	
   return (
-    <div className="label-container">
-      <Label>{title}</Label>
-      <LabelInner>
+    <div {...props}>
+      <Label className='label'>{title}</Label>
 				<Input type={type} name='isMemo' checked={checkBoxCheck}  />
-      </LabelInner>
       {checkBoxCheck ? (
-        <LabelInner>
-          <span>메모 작성</span>
-					<Input type="text" name={name} value={value}  />
+        <LabelInner className='label__inner'> 
+          <div className='title'>메모 작성</div>
+					<Input className ='memo-input'type="text" name={name} value={value}  />
         </LabelInner>
       ) : (
         ''

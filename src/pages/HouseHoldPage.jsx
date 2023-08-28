@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import INITIAL from '../constants/INPUT_INITIAL';
-import Form from '../components/HouseHoldPost/Form';
+import Form from '../components/HouseHoldForm/Form';
 import List from '../components/HouseHoldList/List';
 import './style.css';
 import useLocalStorage from '../hook/useLocalStorage';
@@ -30,7 +30,7 @@ const HouseHoldPage = () => {
   const handleChange = (event) => {
     const { value, name, checked } = event.target;
     console.log(value, name, checked);
-    setInput({ ...input, [name]: value, id: uniqueId() });
+    setInput({ ...input, [name]: value, id: uniqueId()});
     if (name === 'isMemo') return setCheckBoxCheck(checked);
     if (value.trim()) return;
   };

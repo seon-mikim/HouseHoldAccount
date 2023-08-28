@@ -3,9 +3,9 @@
 const INITIAL = {
   id: '',
   productName: '',
-  price: '',
+  price: 0,
   productType: '',
-  date: '',
+  date: new Date(),
   memo: '',
   isRepurchase: false,
 };

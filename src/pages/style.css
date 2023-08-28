@@ -1,6 +1,7 @@
-.main {
+.main-page {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	box-sizing: border-box;
 }

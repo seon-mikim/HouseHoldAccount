@@ -1,12 +1,13 @@
 import React from 'react';
 import Label from '../Label';
 import Input from '../Input';
+import './LabelInput.css';
 
-const LabelInput = ({ title, type, name, value }) => {
+const LabelInput = ({ title, type, name, value, ...props }) => {
   return (
-    <div>
-      <Label>{title}</Label>
-			<Input type={type} name={name} value={value } />
+    <div {...props}>
+      <Label className="label">{title}</Label>
+      <Input className="input" type={type} name={name} value={value} />
     </div>
   );
 };
