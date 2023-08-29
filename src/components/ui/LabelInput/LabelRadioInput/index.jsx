@@ -4,7 +4,6 @@ import LabelInner from '../LabelInner';
 import './style.css';
 
 const LabelRadioInput = ({ title, name, type, value, ...props }) => {
-  console.log(value);
   return (
     <div {...props}>
       <Label className="label">{title}</Label>

@@ -3,7 +3,6 @@ import Option from '../Option';
 import './Select.css'
 
 const Select = ({ optionData, name, value, onChange }) => {
-  console.log(name)
   const handleChange = (event) => {
     if (name === 'dateOrder') return onChange(event);
     if (name === 'priceOrder') return onChange(event)

@@ -22,12 +22,12 @@ const HouseHoldPage = () => {
     'houseHoldList',
     []
   );
-  useEffect(() => {}, [order]);
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const updatedList = [input, ...houseHoldData];
     if (input.productName === '') return alert('상품 이름을 입력하세요');
-    if (input.price === 0) return alert('상품 이름을 입력하세요');
+    if (input.price === 0) return alert('가격을 입력하세요');
     setHouseHoldData(updatedList);
     setInput(INITIAL);
     setCheckBoxCheck(false);
@@ -42,7 +42,6 @@ const HouseHoldPage = () => {
 
   const handleChange = (event) => {
     const { value, name, checked } = event.target;
-    console.log(value, name, checked);
     setInput({ ...input, [name]: value, id: uniqueId() });
     if (name === 'isMemo') return setCheckBoxCheck(checked);
   };
