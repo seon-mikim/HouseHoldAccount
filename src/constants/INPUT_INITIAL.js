@@ -5,7 +5,7 @@ const INITIAL = {
   productName: '',
   price: 0,
   productType: '',
-  date: new Date(),
+  date: new Date().toISOString().slice(0, 10),
   memo: '',
   isRepurchase: false,
 };
