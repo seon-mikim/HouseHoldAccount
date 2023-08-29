@@ -1,0 +1,16 @@
+.card {
+  width: 45rem;
+  height: 6rem;
+  display: flex;
+	align-items: center;
+  margin: 1rem 2rem ;
+	justify-content: space-around;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.25rem;
+  color: #282828;
+  font-size: 1rem;
+  font-weight: 600;
+	.date {
+		width: 4.2rem;
+	}
+}

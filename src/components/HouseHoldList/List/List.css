@@ -1,0 +1,7 @@
+.list-title  {
+	width: 43rem;
+	height: 2rem;
+	display: flex;
+	padding: 2rem 2rem;
+	justify-content: space-around;
+}

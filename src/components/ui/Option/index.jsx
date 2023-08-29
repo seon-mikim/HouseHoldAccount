@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Option = ({ optionValue, value }) => {
-  console.log(value);
+const Option = ({ optionValue }) => {
+ 
   return <option value={optionValue}>{optionValue}</option>;
 };
 

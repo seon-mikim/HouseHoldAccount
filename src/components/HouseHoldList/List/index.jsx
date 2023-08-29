@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from '../../ui/Card';
-
-const List = ({ listItem, onClick }) => {
+import './List.css'
+const List = ({ cardItemData, onClick }) => {
   return (
     <div>
-      <Card item={listItem} onClick={ onClick} />
+      <Card item={cardItemData} onClick={onClick} />
     </div>
   );
 };
