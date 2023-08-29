@@ -5,8 +5,8 @@
 - 2023.08.21(월)~
 ### 프로젝트 설명 
 - 자신이 소비한 항목들을 리스트로 볼 수 있는 가계부 웹 어플리케이션을 만들기.
-### 배포 사이트 
-(배포사이트)[https://vercel.com/xiuxiubok/house-hold-account]
+### 배포 사이트
+[배포사이트](https://house-hold-account.vercel.app/)
 ### 요구사항 
 
 1. create-react-app 으로 프로젝트를 세팅.
