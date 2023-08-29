@@ -22,12 +22,12 @@ const HouseHoldPage = () => {
     'houseHoldList',
     []
   );
-  useEffect(() => {}, [order]);
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const updatedList = [input, ...houseHoldData];
     if (input.productName === '') return alert('상품 이름을 입력하세요');
-    if (input.price === 0) return alert('상품 이름을 입력하세요');
+    if (input.price === 0) return alert('가격을 입력하세요');
     setHouseHoldData(updatedList);
     setInput(INITIAL);
     setCheckBoxCheck(false);
