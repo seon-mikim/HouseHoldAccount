@@ -9,7 +9,6 @@ const ListWrap = ({
   handleOrderChange,
   order,
 }) => {
-  console.log(order);
   return (
     <div>
       <div className="select-wrap">
@@ -24,24 +23,24 @@ const ListWrap = ({
           onChange={handleOrderChange}
         />
       </div>
-      <div className='list-wrap'>
-      <div className="list-title">
-        <div>날짜</div>
-        <div>상품 명</div>
-        <div>가격</div>
-        <div>유형</div>
-        <div>메모</div>
-        <div>재구매 의사</div>
-      </div>
-      {order.length
-        ? order &&
-          order.map((cardItemData) => (
-            <List cardItemData={cardItemData} onClick={onClick} />
-          ))
-        : houseHoldData &&
-          houseHoldData.map((cardItemData) => (
-            <List cardItemData={cardItemData} onClick={onClick} />
-          ))}
+      <div className="list-wrap">
+        <div className="list-title">
+          <div>날짜</div>
+          <div>상품 명</div>
+          <div>가격</div>
+          <div>유형</div>
+          <div>메모</div>
+          <div>재구매 의사</div>
+        </div>
+        {order.length
+          ? order &&
+            order.map((cardItemData) => (
+              <List cardItemData={cardItemData} onClick={onClick} />
+            ))
+          : houseHoldData &&
+            houseHoldData.map((cardItemData) => (
+              <List cardItemData={cardItemData} onClick={onClick} />
+            ))}
       </div>
     </div>
   );

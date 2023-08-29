@@ -42,7 +42,6 @@ const HouseHoldPage = () => {
 
   const handleChange = (event) => {
     const { value, name, checked } = event.target;
-    console.log(value, name, checked);
     setInput({ ...input, [name]: value, id: uniqueId() });
     if (name === 'isMemo') return setCheckBoxCheck(checked);
   };
